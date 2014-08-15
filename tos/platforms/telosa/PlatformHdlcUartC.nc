@@ -46,7 +46,7 @@ configuration PlatformHdlcUartC {
   StdControl = HdlcUartC;
   HdlcUart = HdlcUartC;
 
-  components new Msp430Usart1C() as UsartC;
+  components new Msp430Usart0C() as UsartC;
   HdlcUartC.UsartResource -> UsartC; 
   UsartC.ResourceConfigure -> HdlcUartC.ResourceConfigure;
   HdlcUartC.Usart -> UsartC;
